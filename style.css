@@ -32,6 +32,7 @@
 .app__title {
   text-align: center;
   margin-bottom: 20px;
+  font-family: Poppins;
 }
 #app__input {
   padding: 10px 14px;
@@ -53,6 +54,11 @@
   background-color: rgb(248, 137, 11);
   margin-bottom: 8px;
 }
+
+#app__button:hover{
+  background-color: rgb(255, 162, 56);
+}
+
 #task__list {
   list-style: none;
   flex: 1;
@@ -91,4 +97,25 @@
   font-family: sans-serif;
   font-size: 14px;
   text-align: end;
+}
+
+@media (max-width: 768px) {
+  .app{
+    width: 70%;
+    height: auto;
+  }
+  .app__title{
+    font-size: 18px;
+  }
+
+  
+}
+
+/* Styles for devices with a max width of 480px (e.g., phones) */
+@media (max-width: 480px) {
+  .app{
+    width: 50%;
+    height: auto;
+  }
+ 
 }
